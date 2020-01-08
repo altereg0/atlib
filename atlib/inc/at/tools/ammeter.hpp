@@ -7,20 +7,20 @@
 namespace at {
 class Ammeter {
 public:
-        Ammeter(uint8_t pin, float resistor, float vref) {
-                gpio = Analog(pin);
-                r = resistor;
-                v = vref;
-        }
-        float read(void) {
-                float voltage;
-                voltage = ((float)gpio.read() / 1024.0) / v;
-                return (voltage / r);
-        }
+  Ammeter(uint8_t pin, float resistor, float vref) {
+    gpio = Analog(pin);
+    r    = resistor;
+    v    = vref;
+  }
+  float read(void) {
+    float voltage;
+    voltage = ((float) gpio.read() / 1024.0) / v;
+    return (voltage / r);
+  }
 private:
-        Analog gpio;
-        float r;
-        float v;
+  Analog gpio;
+  float  r;
+  float  v;
 }; /* End of class Ammeter */
 } /* End of namespace at */
 

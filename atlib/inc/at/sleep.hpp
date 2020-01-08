@@ -7,5 +7,5 @@
 #include "at/config.hpp"
 #include <util/delay.h>
 
-#define	sleep(value)	_delay_ms(value)
-#define	usleep(value)	_delay_us(value)
+#define    sleep(value)    _delay_ms(value)
+#define    usleep(value)    _delay_us(value)

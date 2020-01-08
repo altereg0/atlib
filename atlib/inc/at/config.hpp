@@ -4,6 +4,6 @@
 
 #pragma once
 
-#ifndef	F_CPU
+#ifndef    F_CPU
 # error "F_CPU flag is missing!"
-#endif	/* !F_CPU */
+#endif    /* !F_CPU */
